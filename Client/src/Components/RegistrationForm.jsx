@@ -133,7 +133,7 @@ const RegistrationForm = () => {
                                             <div className="form-outline mb-4" >
                                                 <div className="input-group">
                                                     <input
-                                                        type="text" name='confirmPassword'
+                                                        type={showPassword ? "text" : "password"} name='confirmPassword'
                                                         className="form-control form-control-lg"
                                                         placeholder="Confirm Password*"
                                                         onChange={formik.handleChange}
