@@ -16,5 +16,8 @@ app.use(cors())
 
 
 app.use("/auth",router)
+app.get("/",(req,res)=>{
+    res.json("Server Started")
+})
 
 app.listen(PORT,()=>console.log("SERVER STARTED..."))
